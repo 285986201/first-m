@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){
+
+			if($("#d-none").is(":hidden")){
+				$("#btn").attr("class", "dis-block");
+				$("#d-none").slideDown();
+			} else {
+				$("#btn").attr("class","dis-none");
+				$("#d-none").slideUp();
+			}
+		})
+	})
+
+	</script>
+</head>
+<body>
+	<a href="javascript:void(0)" id="btn" class="dis-none">点击显示</a>
+	<div id="d-none">2324</div>
+</body>
+</html>
